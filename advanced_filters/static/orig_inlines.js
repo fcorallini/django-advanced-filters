@@ -68,7 +68,7 @@
         if (row.is("tr")) {
           // If the forms are laid out in table rows, insert
           // the remove button into the last table cell:
-          row.children(":last").append('<div><a class="' + options.deleteCssClass +'" href="javascript:void(0)">' + options.deleteText + "</a></div>");
+          row.children(":last").append('<span><a class="' + options.deleteCssClass +'" href="javascript:void(0)">' + options.deleteText + "</a></span>");
         } else if (row.is("ul") || row.is("ol")) {
           // If they're laid out as an ordered/unordered list,
           // insert an <li> after the last list item:
@@ -199,7 +199,8 @@
       prefix: options.prefix,
       addText: options.addText,
       formCssClass: "dynamic-" + options.prefix,
-      deleteCssClass: "inline-deletelink",
+      deleteCssClass: "deletelink",
+      addCssClass: "addlink",
       deleteText: options.deleteText,
       emptyCssClass: "empty-form",
       removed: alternatingRows,
@@ -261,7 +262,7 @@
       prefix: options.prefix,
       addText: options.addText,
       formCssClass: "dynamic-" + options.prefix,
-      deleteCssClass: "inline-deletelink",
+      deleteCssClass: "deletelink",
       deleteText: options.deleteText,
       emptyCssClass: "empty-form",
       removed: updateInlineLabel,
