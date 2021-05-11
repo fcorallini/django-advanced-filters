@@ -68,6 +68,10 @@
 	display: none;
 }
 
+#advanced_filters .addlink{
+	margin-top: 10px;
+}
+
 .select2-container {
     min-width: 166px;
 }
